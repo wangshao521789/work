@@ -1,0 +1,22 @@
+<map class="map" id="map" longitude="{{longitude}}" latitude="{{latitude}}" scale="14" show-location="true" markers="{{markers}}" bindmarkertap="makertap">
+    
+</map>
+
+<view class="container">
+    <view class=".scan-btn-wrap">
+        <!-- <button bindgetphonenumber="getPhoneNumber" class="over-bt" openType="getPhoneNumber" wx:if="{{showBt}}"></button> -->
+        <button true bindtap="scanCode" class="pay-text">扫码充电</button>
+    </view>
+    <view class="listHide" hover-class="none" hover-stop-propagation="false">
+
+        <view animation="{{animationBtn}}" bindtap="showMyInfo" class="my-wrap">
+            <image class="my" src="../../img/menu.png"></image>
+        </view>
+
+
+    </view>
+
+    <!-- <button bindgetphonenumber="getPhoneNumber" class="over-bt" openType="getPhoneNumber" wx:if="{{showBt}}"></button> -->
+    <button bindtap="enterCode" class="code-name">输入编号充电</button>
+
+</view>
